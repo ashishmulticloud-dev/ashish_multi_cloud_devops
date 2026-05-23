@@ -139,11 +139,29 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:v
 .hire-btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#000;font-family:'Syne',sans-serif;font-weight:700;font-size:15px;padding:14px 32px;border-radius:50px;text-decoration:none;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 4px 24px rgba(0,212,170,0.35)}
 .hire-btn:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,212,170,0.5)}
 .hire-btn svg{width:18px;height:18px}
+
+/* CTC BANNER */
+.ctc-banner{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem;max-width:900px}
+.ctc-card{flex:1;min-width:180px;border-radius:14px;padding:1.25rem 1.5rem;display:flex;align-items:center;gap:14px}
+.ctc-card.current{background:linear-gradient(135deg,rgba(0,212,170,0.08),rgba(0,212,170,0.04));border:1px solid rgba(0,212,170,0.35)}
+.ctc-card.expected{background:linear-gradient(135deg,rgba(79,158,255,0.08),rgba(79,158,255,0.04));border:1px solid rgba(79,158,255,0.35)}
+.ctc-icon{width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.ctc-card.current .ctc-icon{background:rgba(0,212,170,0.15)}
+.ctc-card.expected .ctc-icon{background:rgba(79,158,255,0.15)}
+.ctc-label{font-size:11px;text-transform:uppercase;letter-spacing:0.6px;margin-bottom:2px}
+.ctc-card.current .ctc-label{color:rgba(0,212,170,0.7)}
+.ctc-card.expected .ctc-label{color:rgba(79,158,255,0.7)}
+.ctc-amount{font-family:'Syne',sans-serif;font-weight:800;font-size:1.5rem;line-height:1}
+.ctc-card.current .ctc-amount{color:var(--accent)}
+.ctc-card.expected .ctc-amount{color:var(--accent2)}
+.ctc-arrow{display:flex;align-items:center;justify-content:center;font-size:1.4rem;color:var(--text3);flex-shrink:0}
+
 @media(max-width:768px){
 .nav-links{display:none}
 .hero-stats{grid-template-columns:repeat(2,1fr)}
 .exp-track{padding-left:1rem}
 .exp-item{padding-left:1.5rem}
+.ctc-arrow{transform:rotate(90deg)}
 }
 </style>
 </head>
@@ -172,7 +190,7 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:v
   <div class="hero-inner">
     <div style="display:flex;align-items:center;gap:3rem;flex-wrap:wrap;margin-bottom:2.5rem">
       <div class="hero-photo-wrap">
-        <img src="data:image/jpeg;base64,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" alt="Ashish Vishwakarma" class="hero-photo">
+        <img src="data:image/jpeg;base64,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" alt="Ashish Vishwakarma" class="hero-photo">
         <div class="hero-photo-ring"></div>
       </div>
       <div>
@@ -226,7 +244,6 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:v
     <h2 class="section-title">Professional <span>Experience</span></h2>
     <div class="exp-track">
 
-      <!-- KlearNow -->
       <div class="exp-item">
         <div class="exp-dot"></div>
         <div class="exp-header">
@@ -257,7 +274,6 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:v
         </ul>
       </div>
 
-      <!-- Sysnet -->
       <div class="exp-item">
         <div class="exp-dot" style="background:var(--accent2);box-shadow:0 0 12px var(--accent2)"></div>
         <div class="exp-header">
@@ -285,7 +301,6 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:v
         </ul>
       </div>
 
-      <!-- HCL -->
       <div class="exp-item">
         <div class="exp-dot" style="background:var(--accent4);box-shadow:0 0 12px var(--accent4)"></div>
         <div class="exp-header">
@@ -317,7 +332,6 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:v
     <div class="section-label">Tech Stack</div>
     <h2 class="section-title">Core <span>Competencies</span></h2>
     <div class="skills-grid">
-
       <div class="skill-card">
         <div class="skill-card-icon">☁️</div>
         <div class="skill-card-title">Cloud Platforms</div>
@@ -328,7 +342,6 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:v
           <span class="stag">RDS</span><span class="stag">CloudFront</span><span class="stag">Route 53</span>
         </div>
       </div>
-
       <div class="skill-card">
         <div class="skill-card-icon">🔄</div>
         <div class="skill-card-title">DevOps &amp; CI/CD</div>
@@ -338,7 +351,6 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:v
           <span class="stag">GitOps</span><span class="stag">Maven</span><span class="stag">SonarQube</span>
         </div>
       </div>
-
       <div class="skill-card">
         <div class="skill-card-icon">🐳</div>
         <div class="skill-card-title">Containers &amp; Orchestration</div>
@@ -349,7 +361,6 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:v
           <span class="stag">HPA</span><span class="stag">VPA</span><span class="stag">Cluster Autoscaler</span>
         </div>
       </div>
-
       <div class="skill-card">
         <div class="skill-card-icon">🏗️</div>
         <div class="skill-card-title">IaC &amp; Automation</div>
@@ -359,7 +370,6 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:v
           <span class="stag">Bash/Shell</span><span class="stag">Python</span><span class="stag">HCL</span>
         </div>
       </div>
-
       <div class="skill-card">
         <div class="skill-card-icon">🔐</div>
         <div class="skill-card-title">DevSecOps</div>
@@ -370,7 +380,6 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:v
           <span class="stag">RBAC</span><span class="stag">AWS Shield</span>
         </div>
       </div>
-
       <div class="skill-card">
         <div class="skill-card-icon">📊</div>
         <div class="skill-card-title">Observability</div>
@@ -381,7 +390,6 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:v
           <span class="stag">Azure Monitor</span><span class="stag">Log Analytics</span>
         </div>
       </div>
-
       <div class="skill-card">
         <div class="skill-card-icon">🤖</div>
         <div class="skill-card-title">AIDevOps / LLMOps</div>
@@ -391,7 +399,6 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:v
           <span class="stag">Zero-Hosting Deploy</span>
         </div>
       </div>
-
       <div class="skill-card">
         <div class="skill-card-icon">💻</div>
         <div class="skill-card-title">Scripting &amp; Languages</div>
@@ -401,10 +408,8 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:v
           <span class="stag">Git</span><span class="stag">Gitflow</span>
         </div>
       </div>
-
     </div>
 
-    <!-- Proficiency bars -->
     <div style="margin-top:3rem;background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:2rem">
       <div style="font-family:'Syne',sans-serif;font-weight:700;margin-bottom:1.5rem;font-size:1rem">Proficiency Overview</div>
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem">
@@ -422,7 +427,6 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:v
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
@@ -475,70 +479,60 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:v
     <div class="section-label">Key Projects</div>
     <h2 class="section-title">Flagship <span>Deployments</span></h2>
     <div class="projects-grid">
-
       <div class="proj-card">
         <div class="proj-icon">☸️</div>
         <div class="proj-title">Production-Grade EKS/AKS/GKE Cluster Deployment</div>
         <div class="proj-desc">Multi-cloud Kubernetes deployment on AWS, Azure &amp; GCP using Terraform with HA, auto-scaling, and secure networking across all three providers.</div>
         <div class="proj-tags"><span class="ptag">EKS</span><span class="ptag">AKS</span><span class="ptag">GKE</span><span class="ptag">Terraform</span><span class="ptag">Multi-Cloud</span></div>
       </div>
-
       <div class="proj-card">
         <div class="proj-icon">🗄️</div>
         <div class="proj-title">Automated DB Migration to Amazon RDS</div>
         <div class="proj-desc">Migrated EC2-hosted MySQL to Amazon RDS using AWS DMS with minimal downtime, high availability setup, and full data integrity validation.</div>
         <div class="proj-tags"><span class="ptag">AWS DMS</span><span class="ptag">RDS</span><span class="ptag">MySQL</span><span class="ptag">HA</span></div>
       </div>
-
       <div class="proj-card">
         <div class="proj-icon">🐍</div>
         <div class="proj-title">Scalable Python App on AWS EC2</div>
         <div class="proj-desc">Cloud deployment of a full-stack Python application on AWS EC2 with a comprehensive disaster recovery strategy and auto-scaling.</div>
         <div class="proj-tags"><span class="ptag">Python</span><span class="ptag">EC2</span><span class="ptag">AWS</span><span class="ptag">DR</span></div>
       </div>
-
       <div class="proj-card">
         <div class="proj-icon">☕</div>
         <div class="proj-title">Java Spring Boot on Azure — HA &amp; DR</div>
         <div class="proj-desc">Cloud-native deployment of a full-stack Java Spring Boot app on Azure with high availability, disaster recovery, and enterprise security.</div>
         <div class="proj-tags"><span class="ptag">Java</span><span class="ptag">Spring Boot</span><span class="ptag">Azure</span><span class="ptag">AKS</span></div>
       </div>
-
       <div class="proj-card">
         <div class="proj-icon">🟢</div>
         <div class="proj-title">Full-Stack Node.js on GCP</div>
         <div class="proj-desc">Cloud-native GCP deployment of a full-stack Node.js application with complete HA, scalability, networking, and security layers.</div>
         <div class="proj-tags"><span class="ptag">Node.js</span><span class="ptag">GCP</span><span class="ptag">GKE</span><span class="ptag">Cloud Armor</span></div>
       </div>
-
       <div class="proj-card">
         <div class="proj-icon">⚡</div>
         <div class="proj-title">Serverless Full-Stack on AWS</div>
         <div class="proj-desc">Fully executed serverless deployment using Lambda, API Gateway, and DynamoDB — zero server management, infinite scale.</div>
         <div class="proj-tags"><span class="ptag">Lambda</span><span class="ptag">API Gateway</span><span class="ptag">DynamoDB</span><span class="ptag">Serverless</span></div>
       </div>
-
       <div class="proj-card">
         <div class="proj-icon">🔄</div>
         <div class="proj-title">Multi-Cloud IaC Automation</div>
         <div class="proj-desc">End-to-end Terraform automation for AWS, Azure, and GCP with complete networking, security, and deployment layers in a unified codebase.</div>
         <div class="proj-tags"><span class="ptag">Terraform</span><span class="ptag">AWS</span><span class="ptag">Azure</span><span class="ptag">GCP</span></div>
       </div>
-
       <div class="proj-card">
         <div class="proj-icon">🔀</div>
         <div class="proj-title">GitOps Microservices Platform</div>
         <div class="proj-desc">Full-stack Python, Java &amp; Node.js microservices on AWS using CI/CD, GitOps, Helm, and centralized monitoring with Prometheus, Grafana, and EFK Stack.</div>
         <div class="proj-tags"><span class="ptag">GitOps</span><span class="ptag">Helm</span><span class="ptag">EFK</span><span class="ptag">Prometheus</span></div>
       </div>
-
       <div class="proj-card">
         <div class="proj-icon">🏗️</div>
         <div class="proj-title">Multi-Tier Node.js on 20+ AWS Services</div>
         <div class="proj-desc">Production-grade multi-tier Node.js deployment leveraging 20+ AWS services covering HA, scalability, networking, security, and monitoring.</div>
         <div class="proj-tags"><span class="ptag">AWS</span><span class="ptag">Node.js</span><span class="ptag">20+ Services</span><span class="ptag">HA</span></div>
       </div>
-
     </div>
   </div>
 </section>
@@ -549,7 +543,6 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:v
 <section>
   <div class="container">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;flex-wrap:wrap">
-
       <div>
         <div class="section-label">Certification</div>
         <h2 class="section-title" style="margin-bottom:1.5rem">Cloud <span>Certified</span></h2>
@@ -563,7 +556,6 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:v
           </div>
         </div>
       </div>
-
       <div>
         <div class="section-label">Education</div>
         <h2 class="section-title" style="margin-bottom:1.5rem">Academic <span>Background</span></h2>
@@ -576,7 +568,6 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:v
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -615,6 +606,25 @@ footer{border-top:1px solid var(--border);padding:2rem;text-align:center;color:v
         <div>
           <div class="contact-label">LinkedIn</div>
           <div class="contact-val">linkedin.com/in/ashish12041993</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTC Banner -->
+    <div class="ctc-banner">
+      <div class="ctc-card current">
+        <div class="ctc-icon">💰</div>
+        <div>
+          <div class="ctc-label">Current CTC</div>
+          <div class="ctc-amount">₹14 LPA</div>
+        </div>
+      </div>
+      <div class="ctc-arrow">→</div>
+      <div class="ctc-card expected">
+        <div class="ctc-icon">🎯</div>
+        <div>
+          <div class="ctc-label">Expected CTC</div>
+          <div class="ctc-amount">₹27 LPA</div>
         </div>
       </div>
     </div>
