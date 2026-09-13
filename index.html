@@ -3,230 +3,261 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ashish Vishwakarma | Gen AI DevOps Engineer | AWS Certified | Gurugram</title>
-<meta name="description" content="Ashish Vishwakarma - Gen AI DevOps Engineer with 9+ years of IT experience. Expert in AWS, Kubernetes, Terraform, DevSecOps, AIDevOps, LLMOps. AWS Certified Solutions Architect SAA-C03.">
-<meta name="keywords" content="DevOps Engineer, AWS, Kubernetes, Terraform, EKS, DevSecOps, AIDevOps, LLMOps, K8sGPT, Claude MCP, CI/CD, Jenkins, GitOps, Gurugram, India">
+<title>Ashish Vishwakarma</title>
+<meta name="description" content="Ashish Vishwakarma — Lead Infrastructure &amp; Forward Deployed Engineer, 9+ years in DevOps/DevSecOps across AWS, Azure &amp; GCP, pioneering AIDevOps &amp; LLMOps. AWS Certified Solutions Architect SAA-C03.">
+<meta name="keywords" content="Lead Infrastructure Engineer, Forward Deployed Engineer, AWS, Kubernetes, Terraform, EKS, DevSecOps, AIDevOps, LLMOps, K8sGPT, Claude MCP, CI/CD, Jenkins, GitOps, Gurugram, India">
 <meta name="author" content="Ashish Vishwakarma">
-<meta property="og:title" content="Ashish Vishwakarma — Gen AI DevOps Engineer">
-<meta property="og:description" content="9+ years IT | 5+ years DevSecOps | AWS, Kubernetes, Terraform, AIDevOps, LLMOps">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#F7F9FC;
-  --bg2:#EEF2F8;
-  --white:#FFFFFF;
-  --surface:#FFFFFF;
-  --surface2:#F0F4FA;
-  --primary:#0A5C52;
-  --primary2:#0E7A6D;
-  --primary-light:#E6F4F2;
-  --accent:#FF6B35;
-  --accent2:#1A73E8;
-  --text:#111827;
-  --text2:#4B5563;
-  --text3:#9CA3AF;
-  --border:#E5E9F0;
-  --border2:#D1D8E5;
-  --shadow:0 2px 16px rgba(10,92,82,0.08);
-  --shadow2:0 8px 40px rgba(10,92,82,0.12);
-  --radius:14px;
+  --bg:#0A0D12;
+  --bg2:#0D1219;
+  --surface:#11161F;
+  --surface2:#161D28;
+  --surface3:#1B2330;
+  --line:#232B37;
+  --line2:#313B49;
+  --primary:#3ECF8E;
+  --primary-dim:#2BA876;
+  --primary-glow:rgba(62,207,142,0.16);
+  --amber:#FFB454;
+  --amber-glow:rgba(255,180,84,0.14);
+  --blue:#5CC8FF;
+  --blue-glow:rgba(92,200,255,0.14);
+  --text:#E7ECF2;
+  --text2:#98A3B3;
+  --text3:#7C8794;
+  --mono:'JetBrains Mono',monospace;
+  --sans:'Inter',sans-serif;
+  --radius:12px;
+  --shadow:0 4px 24px rgba(0,0,0,0.35);
+  --shadow2:0 16px 56px rgba(0,0,0,0.5);
 }
 html{scroll-behavior:smooth;font-size:16px}
-body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden;
+  background-image:
+    radial-gradient(circle at 15% 0%, rgba(62,207,142,0.05) 0%, transparent 45%),
+    radial-gradient(circle at 100% 30%, rgba(92,200,255,0.04) 0%, transparent 40%),
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.012) 0px, rgba(255,255,255,0.012) 1px, transparent 1px, transparent 3px);
+  background-attachment:fixed;
+}
+@media (prefers-reduced-motion: reduce){*{animation-duration:0.001ms !important;animation-iteration-count:1 !important;transition-duration:0.001ms !important}}
 
-/* ── SCROLLBAR ── */
-::-webkit-scrollbar{width:4px}
+::-webkit-scrollbar{width:5px}
 ::-webkit-scrollbar-track{background:var(--bg2)}
-::-webkit-scrollbar-thumb{background:var(--primary);border-radius:4px}
+::-webkit-scrollbar-thumb{background:var(--primary-dim);border-radius:4px}
 
 /* ── NAV ── */
-nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);transition:box-shadow 0.3s}
-nav.scrolled{box-shadow:var(--shadow)}
-.nav-inner{max-width:1140px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;height:62px}
-.nav-logo{font-weight:800;font-size:1.1rem;color:var(--primary);letter-spacing:-0.5px}
-.nav-logo span{color:var(--accent)}
-.nav-links{display:flex;gap:0.25rem;list-style:none}
-.nav-links a{color:var(--text2);text-decoration:none;font-size:0.82rem;font-weight:600;padding:6px 12px;border-radius:8px;transition:all 0.2s;letter-spacing:0.3px}
-.nav-links a:hover,.nav-links a.active{background:var(--primary-light);color:var(--primary)}
-.nav-cert{background:var(--primary);color:#fff;font-size:0.72rem;font-weight:700;padding:5px 12px;border-radius:20px;font-family:'Fira Code',monospace;white-space:nowrap}
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,13,18,0.85);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);transition:border-color 0.3s}
+nav.scrolled{border-bottom-color:var(--line2)}
+.nav-inner{max-width:1160px;margin:0 auto;padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;height:58px}
+.nav-logo{font-family:var(--mono);font-weight:700;font-size:0.95rem;color:var(--text);letter-spacing:-0.3px;display:flex;align-items:center;gap:2px}
+.nav-logo .prompt{color:var(--primary)}
+.nav-logo .cursor{display:inline-block;width:7px;height:15px;background:var(--primary);margin-left:4px;animation:blink 1.1s steps(2) infinite}
+@keyframes blink{50%{opacity:0}}
+.nav-links{display:flex;gap:0.15rem;list-style:none}
+.nav-links a{color:var(--text2);text-decoration:none;font-family:var(--mono);font-size:0.76rem;font-weight:500;padding:6px 12px;border-radius:6px;transition:all 0.2s}
+.nav-links a::before{content:'./'}
+.nav-links a:hover,.nav-links a.active{background:var(--primary-glow);color:var(--primary)}
+.nav-cert{background:var(--surface2);border:1px solid var(--primary-dim);color:var(--primary);font-size:0.7rem;font-weight:700;padding:5px 12px;border-radius:20px;font-family:var(--mono);white-space:nowrap}
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
 .hamburger span{display:block;width:22px;height:2px;background:var(--text);border-radius:2px;transition:all 0.3s}
-.mobile-menu{display:none;position:fixed;top:62px;left:0;right:0;background:white;border-bottom:1px solid var(--border);padding:1rem;z-index:999;flex-direction:column;gap:4px;box-shadow:var(--shadow2)}
-.mobile-menu a{color:var(--text2);text-decoration:none;font-size:0.9rem;font-weight:600;padding:10px 16px;border-radius:8px;display:block}
-.mobile-menu a:hover{background:var(--primary-light);color:var(--primary)}
+.mobile-menu{display:none;position:fixed;top:58px;left:0;right:0;background:var(--surface);border-bottom:1px solid var(--line);padding:1rem;z-index:999;flex-direction:column;gap:4px;box-shadow:var(--shadow2)}
+.mobile-menu a{color:var(--text2);text-decoration:none;font-family:var(--mono);font-size:0.85rem;font-weight:600;padding:10px 16px;border-radius:8px;display:block}
+.mobile-menu a:hover{background:var(--primary-glow);color:var(--primary)}
 .mobile-menu.open{display:flex}
 
 /* ── HERO ── */
-.hero{min-height:100vh;display:flex;align-items:center;padding-top:62px;position:relative;overflow:hidden;background:linear-gradient(135deg,#F7F9FC 0%,#E8F4F2 50%,#F0F4FA 100%)}
-.hero::before{content:'';position:absolute;top:-100px;right:-100px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(10,92,82,0.06) 0%,transparent 70%);pointer-events:none}
-.hero::after{content:'';position:absolute;bottom:-150px;left:-100px;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(26,115,232,0.05) 0%,transparent 70%);pointer-events:none}
-.hero-inner{max-width:1140px;margin:0 auto;padding:3rem 1.5rem;width:100%;display:grid;grid-template-columns:1fr auto;gap:4rem;align-items:center;position:relative;z-index:1}
-.hero-tag{display:inline-flex;align-items:center;gap:8px;background:var(--primary-light);border:1px solid rgba(10,92,82,0.2);color:var(--primary);font-size:0.75rem;font-weight:700;padding:6px 14px;border-radius:20px;margin-bottom:1.25rem;font-family:'Fira Code',monospace;letter-spacing:0.5px}
-.hero-tag::before{content:'';display:block;width:6px;height:6px;border-radius:50%;background:var(--accent);animation:blink 1.5s infinite}
-@keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}
-.hero-name{font-size:clamp(2.4rem,5vw,4rem);font-weight:800;line-height:1.05;letter-spacing:-2px;margin-bottom:0.75rem;color:var(--text)}
+.hero{padding:6.5rem 0 4rem;position:relative}
+.hero-inner{max-width:1160px;margin:0 auto;padding:0 1.5rem;width:100%;display:grid;grid-template-columns:1.15fr 0.85fr;gap:3rem;align-items:center;position:relative;z-index:1}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;background:var(--surface2);border:1px solid var(--line2);color:var(--primary);font-size:0.72rem;font-weight:600;padding:6px 14px;border-radius:20px;margin-bottom:1.5rem;font-family:var(--mono);letter-spacing:0.3px}
+.hero-tag::before{content:'';display:block;width:6px;height:6px;border-radius:50%;background:var(--primary);box-shadow:0 0 8px var(--primary);animation:blink 1.6s infinite}
+.hero-name{font-family:var(--mono);font-size:clamp(2rem,4.4vw,3.4rem);font-weight:800;line-height:1.1;letter-spacing:-1.5px;margin-bottom:0.85rem;color:var(--text)}
 .hero-name span{color:var(--primary)}
-.hero-role{font-size:1.05rem;color:var(--text2);margin-bottom:1rem;font-weight:500}
-.hero-meta{font-size:0.85rem;color:var(--text3);margin-bottom:1.5rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.hero-role{font-size:1rem;color:var(--text2);margin-bottom:1.25rem;font-weight:500;font-family:var(--mono)}
+.hero-meta{font-size:0.82rem;color:var(--text3);margin-bottom:1.5rem;display:flex;align-items:center;gap:1.1rem;flex-wrap:wrap;font-family:var(--mono)}
 .hero-meta span{display:flex;align-items:center;gap:5px}
-.hero-pills{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:2rem}
-.pill{background:var(--white);border:1px solid var(--border2);color:var(--text2);font-size:0.72rem;font-weight:600;padding:4px 12px;border-radius:20px;font-family:'Fira Code',monospace;transition:all 0.2s}
-.pill:hover{border-color:var(--primary);color:var(--primary);background:var(--primary-light)}
-.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2rem}
-.btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--primary);color:#fff;font-weight:700;font-size:0.9rem;padding:13px 28px;border-radius:50px;text-decoration:none;transition:all 0.2s;box-shadow:0 4px 20px rgba(10,92,82,0.3)}
-.btn-primary:hover{background:var(--primary2);transform:translateY(-2px);box-shadow:0 8px 28px rgba(10,92,82,0.35)}
-.btn-secondary{display:inline-flex;align-items:center;gap:8px;background:transparent;border:2px solid var(--border2);color:var(--text2);font-weight:700;font-size:0.9rem;padding:11px 24px;border-radius:50px;text-decoration:none;transition:all 0.2s}
-.btn-secondary:hover{border-color:var(--primary);color:var(--primary)}
+.hero-desc{font-size:0.9rem;color:var(--text2);max-width:540px;margin-bottom:1.5rem;line-height:1.7}
+.hero-pills{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:1.75rem}
+.pill{background:var(--surface2);border:1px solid var(--line);color:var(--text2);font-size:0.7rem;font-weight:500;padding:4px 12px;border-radius:6px;font-family:var(--mono);transition:all 0.2s}
+.pill::before{content:'#'; color:var(--primary-dim); margin-right:2px}
+.pill:hover{border-color:var(--primary-dim);color:var(--primary);background:var(--primary-glow)}
+.hero-actions{display:flex;gap:0.85rem;flex-wrap:wrap;margin-bottom:2rem}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--primary);color:#06110C;font-weight:700;font-size:0.85rem;font-family:var(--mono);padding:12px 24px;border-radius:8px;text-decoration:none;transition:all 0.2s;box-shadow:0 0 0 1px var(--primary-dim)}
+.btn-primary:hover{background:#54E0A2;box-shadow:0 0 24px var(--primary-glow),0 0 0 1px var(--primary)}
+.btn-secondary{display:inline-flex;align-items:center;gap:8px;background:transparent;border:1px solid var(--line2);color:var(--text2);font-weight:600;font-size:0.85rem;font-family:var(--mono);padding:11px 22px;border-radius:8px;text-decoration:none;transition:all 0.2s}
+.btn-secondary:hover{border-color:var(--blue);color:var(--blue)}
 .hero-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-.hstat{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1rem 1.25rem;text-align:center;box-shadow:var(--shadow)}
-.hstat-num{font-size:1.6rem;font-weight:800;color:var(--primary);line-height:1;font-family:'Fira Code',monospace}
-.hstat-label{font-size:0.7rem;color:var(--text3);margin-top:3px;font-weight:600;letter-spacing:0.3px}
+.hstat{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:0.9rem 1.1rem;text-align:center}
+.hstat-num{font-size:1.5rem;font-weight:800;color:var(--primary);line-height:1;font-family:var(--mono)}
+.hstat-label{font-size:0.66rem;color:var(--text3);margin-top:4px;font-weight:500;letter-spacing:0.3px;font-family:var(--mono)}
 
-/* PHOTO */
-.hero-photo-wrap{position:relative;flex-shrink:0}
-.hero-photo{width:220px;height:220px;border-radius:24px;object-fit:cover;display:block;box-shadow:0 20px 60px rgba(10,92,82,0.2),0 0 0 4px var(--white),0 0 0 8px rgba(10,92,82,0.15)}
-.photo-badge{position:absolute;bottom:-12px;left:50%;transform:translateX(-50%);background:var(--primary);color:#fff;font-size:0.65rem;font-weight:700;padding:5px 14px;border-radius:20px;white-space:nowrap;font-family:'Fira Code',monospace;box-shadow:0 4px 12px rgba(10,92,82,0.3)}
+/* TERMINAL WINDOW / PHOTO */
+.term-wrap{display:flex;flex-direction:column;gap:1rem}
+.terminal{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden;box-shadow:var(--shadow)}
+.term-bar{background:var(--surface2);padding:8px 12px;display:flex;align-items:center;gap:6px;border-bottom:1px solid var(--line)}
+.term-dot{width:9px;height:9px;border-radius:50%}
+.term-bar .t1{background:#FF5F57}.term-bar .t2{background:#FEBC2E}.term-bar .t3{background:#28C840}
+.term-title{margin-left:auto;font-family:var(--mono);font-size:0.65rem;color:var(--text3)}
+.term-body{padding:14px 16px;font-family:var(--mono);font-size:0.76rem;line-height:1.9}
+.term-body .p{color:var(--primary)}
+.term-body .c{color:var(--text2)}
+.term-body .o{color:var(--text)}
+.term-cursor{display:inline-block;width:6px;height:12px;background:var(--primary);animation:blink 1s steps(2) infinite;vertical-align:middle;margin-left:2px}
+
+.hero-photo-wrap{position:relative;flex-shrink:0;align-self:center}
+.hero-photo{width:168px;height:168px;border-radius:16px;object-fit:cover;display:block;border:1px solid var(--line2);box-shadow:0 0 0 6px var(--surface),0 0 40px rgba(62,207,142,0.15)}
+.photo-badge{position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);background:var(--primary);color:#06110C;font-size:0.62rem;font-weight:700;padding:4px 12px;border-radius:20px;white-space:nowrap;font-family:var(--mono);box-shadow:0 4px 14px rgba(62,207,142,0.4)}
 
 /* CTC BANNER */
-.ctc-strip{background:linear-gradient(135deg,var(--primary),var(--primary2));padding:1rem 0}
-.ctc-inner{max-width:1140px;margin:0 auto;padding:0 1.5rem;display:flex;justify-content:center;align-items:center;gap:3rem;flex-wrap:wrap}
+.ctc-strip{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:1.1rem 0}
+.ctc-inner{max-width:1160px;margin:0 auto;padding:0 1.5rem;display:flex;justify-content:center;align-items:center;gap:3rem;flex-wrap:wrap}
 .ctc-item{display:flex;align-items:center;gap:12px}
-.ctc-icon{width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;font-size:16px}
-.ctc-label{font-size:0.7rem;color:rgba(255,255,255,0.7);font-weight:600;letter-spacing:0.5px;text-transform:uppercase;font-family:'Fira Code',monospace}
-.ctc-val{font-size:1.2rem;font-weight:800;color:#fff;font-family:'Fira Code',monospace}
-.ctc-divider{width:1px;height:40px;background:rgba(255,255,255,0.2)}
+.ctc-icon{width:34px;height:34px;border-radius:8px;background:var(--surface2);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:15px}
+.ctc-label{font-size:0.66rem;color:var(--text3);font-weight:600;letter-spacing:0.5px;text-transform:uppercase;font-family:var(--mono)}
+.ctc-val{font-size:1.15rem;font-weight:800;color:var(--primary);font-family:var(--mono)}
+.ctc-divider{width:1px;height:36px;background:var(--line2)}
 
 /* ── SECTIONS ── */
-section{padding:5rem 0}
-.container{max-width:1140px;margin:0 auto;padding:0 1.5rem}
-.sec-label{font-family:'Fira Code',monospace;font-size:0.72rem;color:var(--primary);letter-spacing:2px;text-transform:uppercase;margin-bottom:0.6rem;font-weight:500}
-.sec-title{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;letter-spacing:-1px;line-height:1.15;margin-bottom:2.5rem;color:var(--text)}
+section{padding:4.5rem 0}
+.container{max-width:1160px;margin:0 auto;padding:0 1.5rem}
+.sec-label{font-family:var(--mono);font-size:0.75rem;color:var(--primary);letter-spacing:0.5px;margin-bottom:0.6rem;font-weight:500}
+.sec-label::before{content:'// '}
+.sec-title{font-family:var(--mono);font-size:clamp(1.4rem,2.6vw,1.9rem);font-weight:700;letter-spacing:-0.5px;line-height:1.15;margin-bottom:2.25rem;color:var(--text)}
 .sec-title span{color:var(--primary)}
 .alt-bg{background:var(--bg2)}
 
+/* SUMMARY */
+.summary-box{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--primary);border-radius:var(--radius);padding:1.6rem 1.85rem;font-size:0.9rem;color:var(--text2);line-height:1.8;margin-bottom:0.5rem}
+
+/* TARGET ROLES */
+.target-roles{display:flex;flex-wrap:wrap;gap:8px;margin-top:1.5rem}
+.trole{background:var(--surface2);border:1px solid var(--line);color:var(--text);font-size:0.74rem;font-weight:600;font-family:var(--mono);padding:6px 14px;border-radius:6px}
+
 /* ── EXPERIENCE ── */
 .exp-list{display:flex;flex-direction:column;gap:1.5rem}
-.exp-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;position:relative;overflow:hidden;transition:box-shadow 0.2s,border-color 0.2s}
-.exp-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(to bottom,var(--primary),var(--primary2))}
-.exp-card:hover{box-shadow:var(--shadow2);border-color:var(--border2)}
-.exp-card:nth-child(2)::before{background:linear-gradient(to bottom,var(--accent2),#5B8DEF)}
-.exp-card:nth-child(3)::before{background:linear-gradient(to bottom,var(--accent),#FF8C5A)}
+.exp-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.85rem;position:relative;overflow:hidden;transition:box-shadow 0.2s,border-color 0.2s}
+.exp-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--primary)}
+.exp-card:hover{box-shadow:var(--shadow);border-color:var(--line2)}
+.exp-card:nth-child(2)::before{background:var(--blue)}
+.exp-card:nth-child(3)::before{background:var(--amber)}
 .exp-top{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;flex-wrap:wrap;margin-bottom:0.5rem}
-.exp-role{font-size:1.05rem;font-weight:800;color:var(--text)}
-.exp-company{font-size:0.88rem;font-weight:600;color:var(--primary);margin-top:2px}
-.exp-period{font-family:'Fira Code',monospace;font-size:0.72rem;color:var(--text3);background:var(--surface2);border:1px solid var(--border);padding:4px 12px;border-radius:20px;white-space:nowrap;flex-shrink:0}
-.exp-desc{font-size:0.88rem;color:var(--text2);margin-bottom:1.25rem;line-height:1.6}
+.exp-role{font-family:var(--mono);font-size:1rem;font-weight:700;color:var(--text)}
+.exp-company{font-size:0.85rem;font-weight:600;color:var(--primary);margin-top:3px}
+.exp-period{font-family:var(--mono);font-size:0.7rem;color:var(--text3);background:var(--surface2);border:1px solid var(--line);padding:4px 12px;border-radius:20px;white-space:nowrap;flex-shrink:0}
+.exp-desc{font-size:0.87rem;color:var(--text2);margin-bottom:1.25rem;line-height:1.65}
 .metrics-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin-bottom:1.25rem}
-.mchip{background:var(--primary-light);border:1px solid rgba(10,92,82,0.15);border-radius:10px;padding:10px 12px;text-align:center}
-.mnum{font-family:'Fira Code',monospace;font-size:1.2rem;font-weight:700;color:var(--primary);line-height:1}
-.mlbl{font-size:0.68rem;color:var(--text3);margin-top:2px;font-weight:600}
-.exp-bullets{list-style:none;display:flex;flex-direction:column;gap:5px}
-.exp-bullets li{font-size:0.84rem;color:var(--text2);display:flex;gap:10px;align-items:flex-start;line-height:1.5}
-.exp-bullets li::before{content:'▸';color:var(--primary);flex-shrink:0;font-size:0.75rem;margin-top:3px}
+.mchip{background:var(--surface2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;text-align:center}
+.mnum{font-family:var(--mono);font-size:1.15rem;font-weight:700;color:var(--primary);line-height:1}
+.mnum.blue{color:var(--blue)}
+.mlbl{font-size:0.66rem;color:var(--text3);margin-top:3px;font-weight:500;font-family:var(--mono)}
+.exp-bullets{list-style:none;display:flex;flex-direction:column;gap:6px}
+.exp-bullets li{font-size:0.83rem;color:var(--text2);display:flex;gap:10px;align-items:flex-start;line-height:1.55}
+.exp-bullets li::before{content:'❯';color:var(--primary);flex-shrink:0;font-size:0.78rem;margin-top:2px;font-family:var(--mono)}
 
 /* ── SKILLS ── */
-.skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.25rem}
-.skill-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;transition:all 0.2s}
-.skill-card:hover{border-color:var(--primary);box-shadow:var(--shadow);transform:translateY(-2px)}
-.skill-icon{font-size:1.4rem;margin-bottom:0.75rem}
-.skill-title{font-weight:800;font-size:0.88rem;margin-bottom:0.75rem;color:var(--text)}
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.1rem}
+.skill-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;transition:all 0.2s}
+.skill-card:hover{border-color:var(--primary-dim);box-shadow:0 0 0 1px var(--primary-dim),var(--shadow)}
+.skill-icon{font-size:1.3rem;margin-bottom:0.7rem}
+.skill-title{font-family:var(--mono);font-weight:700;font-size:0.82rem;margin-bottom:0.75rem;color:var(--text)}
 .stags{display:flex;flex-wrap:wrap;gap:5px}
-.stag{background:var(--surface2);color:var(--text2);font-size:0.68rem;font-weight:600;padding:3px 9px;border-radius:6px;font-family:'Fira Code',monospace;border:1px solid var(--border)}
+.stag{background:var(--surface2);color:var(--text2);font-size:0.66rem;font-weight:500;padding:3px 9px;border-radius:5px;font-family:var(--mono);border:1px solid var(--line)}
+.stag::before{content:'--'; color:var(--text3)}
 
 /* PROFICIENCY */
-.prof-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;margin-top:2rem;background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:2rem}
-.sbar-wrap{margin-bottom:10px}
-.sbar-top{display:flex;justify-content:space-between;font-size:0.8rem;margin-bottom:5px}
-.sbar-name{font-weight:600;color:var(--text)}
-.sbar-level{font-weight:600;color:var(--primary);font-family:'Fira Code',monospace;font-size:0.72rem}
-.sbar{height:5px;background:var(--surface2);border-radius:3px;overflow:hidden}
-.sbar-fill{height:100%;border-radius:3px;background:linear-gradient(to right,var(--primary),var(--primary2));position:relative;animation:fillBar 1.2s ease-out forwards;transform-origin:left}
+.prof-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;margin-top:2rem;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.85rem}
+.sbar-wrap{margin-bottom:12px}
+.sbar-top{display:flex;justify-content:space-between;font-size:0.79rem;margin-bottom:6px}
+.sbar-name{font-weight:600;color:var(--text);font-family:var(--mono)}
+.sbar-level{font-weight:600;color:var(--primary);font-family:var(--mono);font-size:0.7rem}
+.sbar{height:4px;background:var(--surface2);border-radius:3px;overflow:hidden}
+.sbar-fill{height:100%;border-radius:3px;background:linear-gradient(to right,var(--primary-dim),var(--primary));animation:fillBar 1.2s ease-out forwards;transform-origin:left}
 @keyframes fillBar{from{width:0%}to{width:var(--w)}}
 
 /* ── AIDEVOPS ── */
-.ai-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.25rem}
-.ai-card{background:linear-gradient(135deg,var(--primary-light),rgba(230,244,242,0.4));border:1px solid rgba(10,92,82,0.15);border-radius:var(--radius);padding:1.5rem;transition:all 0.2s}
-.ai-card:hover{border-color:var(--primary);box-shadow:var(--shadow)}
+.ai-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.1rem}
+.ai-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;transition:all 0.2s}
+.ai-card:hover{border-color:var(--blue);box-shadow:0 0 0 1px var(--blue),var(--shadow)}
 .ai-top{display:flex;align-items:center;gap:12px;margin-bottom:0.75rem}
-.ai-icon-wrap{width:40px;height:40px;border-radius:10px;background:var(--primary);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
-.ai-title{font-weight:800;font-size:0.9rem;color:var(--text)}
-.ai-desc{font-size:0.83rem;color:var(--text2);line-height:1.55}
+.ai-icon-wrap{width:38px;height:38px;border-radius:8px;background:var(--blue-glow);border:1px solid var(--blue);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.ai-title{font-family:var(--mono);font-weight:700;font-size:0.85rem;color:var(--text)}
+.ai-desc{font-size:0.82rem;color:var(--text2);line-height:1.6}
 
 /* ── PROJECTS ── */
-.proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.25rem}
-.proj-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;position:relative;overflow:hidden;transition:all 0.2s}
-.proj-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(to right,var(--primary),var(--primary2))}
-.proj-card:hover{box-shadow:var(--shadow2);border-color:var(--border2);transform:translateY(-2px)}
-.proj-icon-wrap{width:42px;height:42px;border-radius:10px;background:var(--primary-light);border:1px solid rgba(10,92,82,0.15);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-size:18px}
-.proj-title{font-weight:800;font-size:0.9rem;margin-bottom:0.5rem;line-height:1.35;color:var(--text)}
-.proj-desc{font-size:0.8rem;color:var(--text2);line-height:1.55;margin-bottom:1rem}
+.proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.1rem}
+.proj-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;position:relative;overflow:hidden;transition:all 0.2s}
+.proj-card::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--primary-dim)}
+.proj-card:hover{box-shadow:var(--shadow);border-color:var(--line2);transform:translateY(-2px)}
+.proj-icon-wrap{width:38px;height:38px;border-radius:8px;background:var(--surface2);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-size:17px}
+.proj-title{font-family:var(--mono);font-weight:700;font-size:0.85rem;margin-bottom:0.5rem;line-height:1.35;color:var(--text)}
+.proj-desc{font-size:0.79rem;color:var(--text2);line-height:1.55;margin-bottom:1rem}
 .ptags{display:flex;flex-wrap:wrap;gap:5px}
-.ptag{font-size:0.67rem;font-weight:600;padding:2px 8px;border-radius:5px;font-family:'Fira Code',monospace;background:rgba(26,115,232,0.08);border:1px solid rgba(26,115,232,0.2);color:var(--accent2)}
+.ptag{font-size:0.65rem;font-weight:500;padding:2px 8px;border-radius:4px;font-family:var(--mono);background:var(--blue-glow);border:1px solid rgba(92,200,255,0.3);color:var(--blue)}
 
 /* ── CERT & EDU ── */
-.cert-edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
-.cert-card{background:linear-gradient(135deg,#FFF8F0,#FFF3E8);border:1px solid rgba(255,107,53,0.2);border-radius:var(--radius);padding:2rem;display:flex;align-items:center;gap:1.5rem}
-.cert-badge{width:70px;height:70px;border-radius:50%;background:linear-gradient(135deg,#FF9900,#FF6B35);display:flex;align-items:center;justify-content:center;font-size:1.8rem;flex-shrink:0;box-shadow:0 8px 24px rgba(255,107,53,0.3)}
-.cert-title{font-weight:800;font-size:1rem;margin-bottom:4px;color:var(--text)}
-.cert-sub{font-size:0.83rem;color:var(--text2);margin-bottom:6px}
-.cert-badge-tag{display:inline-block;background:rgba(10,92,82,0.1);color:var(--primary);font-size:0.7rem;font-weight:700;padding:3px 10px;border-radius:20px;font-family:'Fira Code',monospace}
-.edu-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:2rem}
-.edu-title{font-weight:800;font-size:1rem;margin-bottom:5px;color:var(--text)}
-.edu-uni{color:var(--accent2);font-size:0.88rem;font-weight:600;margin-bottom:5px}
-.edu-meta{font-size:0.82rem;color:var(--text3);margin-bottom:0.75rem}
-.edu-score{display:inline-block;background:rgba(26,115,232,0.08);border:1px solid rgba(26,115,232,0.2);color:var(--accent2);font-size:0.75rem;font-weight:700;padding:4px 12px;border-radius:8px;font-family:'Fira Code',monospace}
+.cert-edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.cert-card{background:var(--surface);border:1px solid var(--amber);border-left:3px solid var(--amber);border-radius:var(--radius);padding:1.85rem;display:flex;align-items:center;gap:1.4rem}
+.cert-badge{width:62px;height:62px;border-radius:14px;background:linear-gradient(135deg,#FF9900,#FF6B35);display:flex;align-items:center;justify-content:center;font-size:1.6rem;flex-shrink:0;box-shadow:0 8px 24px rgba(255,153,0,0.25)}
+.cert-title{font-family:var(--mono);font-weight:700;font-size:0.94rem;margin-bottom:4px;color:var(--text)}
+.cert-sub{font-size:0.82rem;color:var(--text2);margin-bottom:2px}
+.cert-id{font-size:0.71rem;color:var(--text3);font-family:var(--mono);margin-bottom:8px}
+.cert-badge-tag{display:inline-block;background:var(--primary-glow);color:var(--primary);font-size:0.68rem;font-weight:700;padding:3px 10px;border-radius:20px;font-family:var(--mono)}
+.edu-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.85rem}
+.edu-title{font-family:var(--mono);font-weight:700;font-size:0.94rem;margin-bottom:6px;color:var(--text)}
+.edu-uni{color:var(--blue);font-size:0.85rem;font-weight:600;margin-bottom:5px}
+.edu-meta{font-size:0.8rem;color:var(--text3);margin-bottom:0.75rem}
+.edu-score{display:inline-block;background:var(--blue-glow);border:1px solid rgba(92,200,255,0.3);color:var(--blue);font-size:0.72rem;font-weight:700;padding:4px 12px;border-radius:6px;font-family:var(--mono)}
 
 /* ── CONTACT ── */
-.contact-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:1rem;max-width:900px;margin-bottom:2rem}
-.contact-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:1.25rem;display:flex;align-items:center;gap:12px;transition:all 0.2s}
-.contact-card:hover{border-color:var(--primary);box-shadow:var(--shadow)}
-.contact-icon{width:38px;height:38px;border-radius:9px;background:var(--primary-light);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
-.contact-lbl{font-size:0.68rem;color:var(--text3);text-transform:uppercase;letter-spacing:0.5px;font-weight:700;font-family:'Fira Code',monospace}
-.contact-val{font-size:0.82rem;color:var(--text);font-weight:600;word-break:break-all}
-.open-to{background:var(--primary-light);border:1px solid rgba(10,92,82,0.2);border-radius:12px;padding:1.25rem 1.5rem;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-.ot-lbl{font-size:0.82rem;color:var(--primary);font-weight:700;flex-shrink:0}
-.ot-tag{background:var(--primary);color:#fff;font-size:0.72rem;font-weight:600;padding:4px 12px;border-radius:20px;font-family:'Fira Code',monospace}
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem;max-width:960px;margin-bottom:2rem}
+.contact-card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.15rem;display:flex;align-items:center;gap:12px;transition:all 0.2s}
+.contact-card:hover{border-color:var(--primary-dim);box-shadow:var(--shadow)}
+.contact-icon{width:36px;height:36px;border-radius:8px;background:var(--surface2);display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0}
+.contact-lbl{font-size:0.65rem;color:var(--text3);text-transform:uppercase;letter-spacing:0.5px;font-weight:600;font-family:var(--mono)}
+.contact-val{font-size:0.8rem;color:var(--text);font-weight:600;overflow-wrap:anywhere;word-break:normal}
+.open-to{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:1.2rem 1.4rem;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.ot-lbl{font-size:0.8rem;color:var(--primary);font-weight:700;flex-shrink:0;font-family:var(--mono)}
+.ot-tag{background:var(--surface2);border:1px solid var(--line2);color:var(--text);font-size:0.7rem;font-weight:600;padding:4px 12px;border-radius:6px;font-family:var(--mono)}
 
 /* ── FOOTER ── */
-footer{background:var(--text);color:rgba(255,255,255,0.6);text-align:center;padding:1.75rem;font-size:0.78rem;font-family:'Fira Code',monospace}
-footer strong{color:#fff}
+footer{background:var(--bg2);color:var(--text3);text-align:center;padding:1.6rem;font-size:0.76rem;font-family:var(--mono);border-top:1px solid var(--line)}
+footer .fp{color:var(--primary)}
+footer strong{color:var(--text)}
 
 /* ── ANIMATIONS ── */
-.fade-up{opacity:0;transform:translateY(24px);transition:opacity 0.55s ease,transform 0.55s ease}
+.fade-up{opacity:0;transform:translateY(20px);transition:opacity 0.5s ease,transform 0.5s ease}
 .fade-up.visible{opacity:1;transform:translateY(0)}
 
-/* ── DIVIDER ── */
-.divider{height:1px;background:linear-gradient(to right,transparent,var(--border2),transparent)}
+.divider{height:1px;background:var(--line)}
 
 /* ── RESPONSIVE ── */
 @media(max-width:900px){
   .cert-edu-grid{grid-template-columns:1fr}
-  .hero-inner{grid-template-columns:1fr;gap:2.5rem;text-align:center}
-  .hero-photo-wrap{order:-1;display:flex;flex-direction:column;align-items:center}
-  .hero-pills,.hero-actions,.hero-meta{justify-content:center}
+  .hero-inner{grid-template-columns:1fr;gap:2.25rem;text-align:left}
+  .hero-photo-wrap{order:-1}
   .hero-stats{grid-template-columns:repeat(4,1fr)}
 }
 @media(max-width:700px){
   .nav-links,.nav-cert{display:none}
   .hamburger{display:flex}
   .hero-stats{grid-template-columns:repeat(2,1fr)}
-  .hero-photo{width:160px;height:160px;border-radius:18px}
-  .hero-name{font-size:2.2rem}
+  .hero-name{font-size:2rem}
   .ctc-inner{gap:1.5rem}
   .ctc-divider{display:none}
   .metrics-row{grid-template-columns:repeat(2,1fr)}
-  .proj-grid{grid-template-columns:1fr}
-  section{padding:3.5rem 0}
-  .sec-title{margin-bottom:1.75rem}
-  .exp-card{padding:1.5rem}
-  .prof-grid{grid-template-columns:1fr;padding:1.25rem}
+  section{padding:3.25rem 0}
+  .sec-title{margin-bottom:1.6rem}
+  .exp-card{padding:1.4rem}
+  .prof-grid{grid-template-columns:1fr;padding:1.2rem}
+  .cert-card{flex-direction:column;text-align:center}
 }
 @media(max-width:400px){
   .hero-stats{grid-template-columns:repeat(2,1fr)}
   .ctc-inner{flex-direction:column;gap:1rem}
-  .hero-actions{flex-direction:column;align-items:center}
-  .btn-primary,.btn-secondary{width:100%;justify-content:center}
+  .hero-actions{flex-direction:column;align-items:stretch}
+  .btn-primary,.btn-secondary{justify-content:center}
 }
 </style>
 </head>
@@ -235,14 +266,14 @@ footer strong{color:#fff}
 <!-- NAV -->
 <nav id="navbar">
   <div class="nav-inner">
-    <div class="nav-logo">A<span>V</span></div>
+    <div class="nav-logo"><span class="prompt">~/</span>ashish<span class="cursor"></span></div>
     <ul class="nav-links">
-      <li><a href="#about" class="active">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#aidevops">AIDevOps</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about" class="active">about</a></li>
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#aidevops">aidevops</a></li>
+      <li><a href="#contact">contact</a></li>
     </ul>
     <div class="nav-cert">AWS SAA-C03 ✓</div>
     <div class="hamburger" id="hamburger" onclick="toggleMenu()">
@@ -251,57 +282,70 @@ footer strong{color:#fff}
   </div>
 </nav>
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#about" onclick="closeMenu()">About</a>
-  <a href="#experience" onclick="closeMenu()">Experience</a>
-  <a href="#skills" onclick="closeMenu()">Skills</a>
-  <a href="#projects" onclick="closeMenu()">Projects</a>
-  <a href="#aidevops" onclick="closeMenu()">AIDevOps</a>
-  <a href="#contact" onclick="closeMenu()">Contact</a>
+  <a href="#about" onclick="closeMenu()">./about</a>
+  <a href="#experience" onclick="closeMenu()">./experience</a>
+  <a href="#skills" onclick="closeMenu()">./skills</a>
+  <a href="#projects" onclick="closeMenu()">./projects</a>
+  <a href="#aidevops" onclick="closeMenu()">./aidevops</a>
+  <a href="#contact" onclick="closeMenu()">./contact</a>
 </div>
 
 <!-- HERO -->
 <section class="hero" id="about">
   <div class="hero-inner">
     <div>
-      <div class="hero-tag">🟢 Open to Opportunities</div>
+      <div class="hero-tag">STATUS: OPEN_TO_WORK</div>
       <h1 class="hero-name">Ashish<br><span>Vishwakarma</span></h1>
-      <p class="hero-role">Gen AI DevOps Engineer &amp; AWS Certified Solutions Architect</p>
+      <p class="hero-role">lead_infrastructure · forward_deployed_&amp;_ai_devops_engineer</p>
       <div class="hero-meta">
         <span>📍 Gurugram, Haryana</span>
         <span>📞 +91-9450321712</span>
-        <span>🏆 9+ Years Experience</span>
+        <span>🏆 9+ yrs experience</span>
       </div>
-      <p style="font-size:0.9rem;color:var(--text2);max-width:540px;margin-bottom:1.5rem;line-height:1.65">5+ years in DevSecOps across AWS, Azure &amp; GCP. Pioneering AIDevOps &amp; LLMOps — integrating K8sGPT, Claude MCP Server, and AI-driven automation into the DevOps lifecycle.</p>
+      <p class="hero-desc">Results-driven Cloud Operations &amp; DevOps leader with 9+ years across AWS, Azure &amp; GCP — spanning DevOps, DevSecOps, Site Reliability, and customer-facing Forward Deployed delivery. Pioneering AIDevOps &amp; LLMOps, integrating K8sGPT, Claude MCP Server, and AI-driven automation into the DevOps lifecycle.</p>
       <div class="hero-pills">
-        <span class="pill">Multi-Cloud</span>
-        <span class="pill">Kubernetes</span>
-        <span class="pill">CI/CD</span>
-        <span class="pill">Terraform</span>
-        <span class="pill">DevSecOps</span>
-        <span class="pill">LLMOps</span>
-        <span class="pill">AIDevOps</span>
-        <span class="pill">K8sGPT</span>
+        <span class="pill">multi-cloud</span>
+        <span class="pill">kubernetes</span>
+        <span class="pill">ci-cd</span>
+        <span class="pill">terraform</span>
+        <span class="pill">devsecops</span>
+        <span class="pill">llmops</span>
+        <span class="pill">aidevops</span>
+        <span class="pill">k8sgpt</span>
+        <span class="pill">openshift</span>
       </div>
       <div class="hero-actions">
         <a href="mailto:ashish.mnnit777@gmail.com" class="btn-primary">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 7l-8 5-8-5"/><rect x="2" y="5" width="20" height="14" rx="2"/></svg>
-          Hire Me
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 7l-8 5-8-5"/><rect x="2" y="5" width="20" height="14" rx="2"/></svg>
+          hire_me()
         </a>
         <a href="https://linkedin.com/in/ashish12041993" target="_blank" class="btn-secondary">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-          LinkedIn
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          linkedin
         </a>
       </div>
       <div class="hero-stats">
-        <div class="hstat"><div class="hstat-num">9+</div><div class="hstat-label">Years in IT</div></div>
-        <div class="hstat"><div class="hstat-num">60%</div><div class="hstat-label">Faster Deployments</div></div>
-        <div class="hstat"><div class="hstat-num">35%</div><div class="hstat-label">Cost Reduction</div></div>
-        <div class="hstat"><div class="hstat-num">45%</div><div class="hstat-label">Better Detection</div></div>
+        <div class="hstat"><div class="hstat-num">9+</div><div class="hstat-label">years_in_it</div></div>
+        <div class="hstat"><div class="hstat-num">60%</div><div class="hstat-label">faster_deploy</div></div>
+        <div class="hstat"><div class="hstat-num">35%</div><div class="hstat-label">cost_cut</div></div>
+        <div class="hstat"><div class="hstat-num">45%</div><div class="hstat-label">better_mttd</div></div>
       </div>
     </div>
-    <div class="hero-photo-wrap">
-      <img src="data:image/jpeg;base64,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" alt="Ashish Vishwakarma - Gen AI DevOps Engineer" class="hero-photo" width="220" height="220">
-      <div class="photo-badge">AWS SAA-C03 Certified ✓</div>
+    <div class="term-wrap">
+      <div class="hero-photo-wrap">
+        <img src="data:image/jpeg;base64,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" alt="Ashish Vishwakarma" class="hero-photo" width="168" height="168">
+        <div class="photo-badge">AWS SAA-C03 ✓</div>
+      </div>
+      <div class="terminal">
+        <div class="term-bar"><span class="term-dot t1"></span><span class="term-dot t2"></span><span class="term-dot t3"></span><span class="term-title">ashish@gurugram:~</span></div>
+        <div class="term-body">
+          <div><span class="p">$</span> <span class="c">whoami</span></div>
+          <div class="o">lead_infrastructure_engineer</div>
+          <div><span class="p">$</span> <span class="c">cat</span> current_role.log</div>
+          <div class="o">KlearNow India · Oct 2021 → Present</div>
+          <div><span class="p">$</span> <span class="c">echo</span> $STATUS<span class="term-cursor"></span></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -312,57 +356,78 @@ footer strong{color:#fff}
     <div class="ctc-item">
       <div class="ctc-icon">💰</div>
       <div>
-        <div class="ctc-label">Current CTC</div>
-        <div class="ctc-val">₹xx LPA</div>
+        <div class="ctc-label">current_ctc</div>
+        <div class="ctc-val">₹14 LPA</div>
       </div>
     </div>
     <div class="ctc-divider"></div>
     <div class="ctc-item">
       <div class="ctc-icon">🎯</div>
       <div>
-        <div class="ctc-label">Expected CTC</div>
-        <div class="ctc-val">₹xx LPA</div>
+        <div class="ctc-label">expected_ctc</div>
+        <div class="ctc-val">₹25 LPA</div>
       </div>
     </div>
     <div class="ctc-divider"></div>
     <div class="ctc-item">
       <div class="ctc-icon">📅</div>
       <div>
-        <div class="ctc-label">Notice Period</div>
-        <div class="ctc-val" style="font-size:1rem">60 Days</div>
+        <div class="ctc-label">notice_period</div>
+        <div class="ctc-val" style="font-size:1rem;color:var(--amber)">60 Days</div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="divider"></div>
+<!-- SUMMARY + TARGET ROLES -->
+<section>
+  <div class="container">
+    <div class="sec-label">profile</div>
+    <h2 class="sec-title">professional_<span>summary</span></h2>
+    <div class="summary-box fade-up">Results-driven Cloud Operations and DevOps leader with 9+ years of experience across AWS, Azure, and GCP, spanning DevOps, DevSecOps, Site Reliability, and customer-facing technical delivery. Proven record of deploying and supporting production cloud platforms directly with engineering and business stakeholders, cutting deployment cycles by 60%, reducing infrastructure costs by 35%, and improving incident detection by 45%. Skilled in translating customer and business requirements into scalable technical solutions — a core strength for Forward Deployed Engineer and Cloud Ops Tech Lead roles. Deep expertise in CI/CD automation, Kubernetes orchestration, Infrastructure as Code, cloud operations, incident response, and DevSecOps. Actively pioneering AI DevOps and LLMOps, integrating K8sGPT, Claude MCP Server, and AI-driven automation into the DevOps lifecycle. Experienced in agile and scrum environments, partnering with cross-functional engineering, product, and client teams to accelerate delivery and improve reliability.</div>
+    <div class="target-roles fade-up">
+      <span class="trole">Forward Deployed Engineer (FDE)</span>
+      <span class="trole">Cloud Ops Tech Lead</span>
+      <span class="trole">Lead DevOps Engineer</span>
+      <span class="trole">Senior DevSecOps Engineer</span>
+      <span class="trole">AI DevOps Engineer</span>
+      <span class="trole">LLMOps Engineer</span>
+      <span class="trole">Cloud Engineering Lead</span>
+      <span class="trole">Platform Engineering Lead</span>
+      <span class="trole">Platform Security Lead Engineer</span>
+    </div>
+  </div>
+</section>
 
 <!-- EXPERIENCE -->
-<section id="experience">
+<section id="experience" class="alt-bg">
   <div class="container">
-    <div class="sec-label">Career Timeline</div>
-    <h2 class="sec-title">Professional <span>Experience</span></h2>
+    <div class="sec-label">career_timeline</div>
+    <h2 class="sec-title">professional_<span>experience</span></h2>
     <div class="exp-list">
 
       <div class="exp-card fade-up">
         <div class="exp-top">
           <div>
-            <div class="exp-role">DevOps Engineer II</div>
-            <div class="exp-company">KlearNow India · Gurugram</div>
+            <div class="exp-role">Lead Infrastructure</div>
+            <div class="exp-company">KlearNow India Private Limited · Gurugram</div>
           </div>
           <div class="exp-period">Oct 2021 – Present</div>
         </div>
-        <p class="exp-desc">Leading cloud-native platform engineering — architecting multi-region AWS infrastructure, Kubernetes-based microservices, and embedding security and observability into every layer of the delivery pipeline.</p>
+        <p class="exp-desc">Leading cloud infrastructure and forward-deployed platform engineering — architecting multi-region AWS infrastructure, Kubernetes-based microservices, and embedding security and observability into every layer of the delivery pipeline, while serving as primary technical point of contact for cross-functional teams.</p>
         <div class="metrics-row">
-          <div class="mchip"><div class="mnum">99.95%</div><div class="mlbl">EKS Availability</div></div>
-          <div class="mchip"><div class="mnum">60%</div><div class="mlbl">Deployment Speed</div></div>
-          <div class="mchip"><div class="mnum">35%</div><div class="mlbl">Cost Reduction</div></div>
-          <div class="mchip"><div class="mnum">45%</div><div class="mlbl">Faster Detection</div></div>
+          <div class="mchip"><div class="mnum">99.95%</div><div class="mlbl">eks_availability</div></div>
+          <div class="mchip"><div class="mnum">60%</div><div class="mlbl">deploy_speed</div></div>
+          <div class="mchip"><div class="mnum">35%</div><div class="mlbl">cost_reduction</div></div>
+          <div class="mchip"><div class="mnum">45%</div><div class="mlbl">faster_detect</div></div>
         </div>
         <ul class="exp-bullets">
-          <li>Designed secure, scalable VPC architectures across 3+ AWS regions with multiple AZs — improved resilience by ~40%</li>
+          <li>Designed and executed secure, scalable VPC architectures across 3+ AWS regions with multiple AZs and public/private subnets — improving infrastructure resilience by ~40%</li>
+          <li>Set up Application Load Balancers (ALB) for path-based and host-based routing across 10+ microservices with zero-downtime deployments</li>
+          <li>Oversaw 50+ EC2 instances across production, staging, and development environments — achieved 99.9% uptime through proactive monitoring and auto-scaling policies</li>
           <li>Containerized 15+ apps with Docker on EKS; 99.95% cluster availability, rollback under 5 minutes</li>
-          <li>Built 20+ CI/CD pipelines in Jenkins with SonarQube quality gates and Trivy container scanning</li>
+          <li>Managed EKS clusters with HPA and VPA auto-scaling — 99.95% availability and 30% lower node costs through right-sizing</li>
+          <li>Built 20+ CI/CD pipelines in Jenkins with SonarQube quality gates and Trivy container scanning — cutting release cycles by 50%</li>
           <li>Developed 20+ reusable Terraform modules — environment setup reduced from days to under 2 hours</li>
           <li>Designed serverless apps with Lambda + API Gateway, cutting infra costs by 35% vs EC2-based solutions</li>
           <li>Centralized monitoring with Datadog, Prometheus, Grafana — MTTD reduced by 45%</li>
@@ -379,21 +444,22 @@ footer strong{color:#fff}
           </div>
           <div class="exp-period">May 2017 – Aug 2021</div>
         </div>
-        <p class="exp-desc">Full-spectrum cloud engineering across AWS and Azure — CI/CD pipelines, containerizing legacy systems, managing Kubernetes clusters, automating infrastructure with Terraform and Ansible.</p>
+        <p class="exp-desc">Full-spectrum cloud engineering across AWS and Azure — CI/CD pipelines, containerizing legacy systems, managing Kubernetes clusters, automating infrastructure with Terraform and Ansible for 5+ client projects.</p>
         <div class="metrics-row">
-          <div class="mchip" style="background:rgba(26,115,232,0.08);border-color:rgba(26,115,232,0.15)"><div class="mnum" style="color:var(--accent2)">70%</div><div class="mlbl">Deployment Effort ↓</div></div>
-          <div class="mchip" style="background:rgba(26,115,232,0.08);border-color:rgba(26,115,232,0.15)"><div class="mnum" style="color:var(--accent2)">99.5%</div><div class="mlbl">SLA Compliance</div></div>
-          <div class="mchip" style="background:rgba(26,115,232,0.08);border-color:rgba(26,115,232,0.15)"><div class="mnum" style="color:var(--accent2)">80%</div><div class="mlbl">Fewer Errors</div></div>
-          <div class="mchip" style="background:rgba(26,115,232,0.08);border-color:rgba(26,115,232,0.15)"><div class="mnum" style="color:var(--accent2)">65%</div><div class="mlbl">Fewer Conflicts</div></div>
+          <div class="mchip"><div class="mnum blue">70%</div><div class="mlbl">deploy_effort_↓</div></div>
+          <div class="mchip"><div class="mnum blue">99.8%</div><div class="mlbl">client_sla_uptime</div></div>
+          <div class="mchip"><div class="mnum blue">80%</div><div class="mlbl">fewer_errors</div></div>
+          <div class="mchip"><div class="mnum blue">65%</div><div class="mlbl">fewer_conflicts</div></div>
         </div>
         <ul class="exp-bullets">
           <li>Built CI/CD pipelines in Jenkins &amp; GitHub Actions for 10+ projects — releases improved from monthly to weekly</li>
           <li>Containerized 12+ legacy apps with Docker multi-stage builds; image sizes reduced by 60%</li>
           <li>Deployed Kubernetes clusters (Minikube, EKS, AKS) with Helm charts across 3 environments</li>
-          <li>Wrote 15+ reusable Terraform modules for AWS and Azure; setup time cut from 2 days to under 3 hours</li>
-          <li>Prometheus + Grafana with 30+ custom alert rules; 90% of issues resolved before customer impact</li>
+          <li>Wrote 15+ reusable Terraform modules for AWS and Azure; setup time cut from 2 days to under 3 hours, provisioning errors down 80%</li>
+          <li>Prometheus + Grafana with 30+ custom alert rules; 90% of issues resolved before customer impact, SLA compliance up to 99.5%</li>
           <li>Automated patch management for 100+ servers with Ansible, saving ~10 hrs/week</li>
-          <li>Led Gitflow governance for 15-person team; code review turnaround cut by 30%</li>
+          <li>Led Gitflow governance for a 15-person engineering team; code review turnaround cut by 30%</li>
+          <li>Deployed and managed AWS &amp; Azure resources (VMs, storage, VNets, RBAC, NSGs) for 5+ client projects supporting 20–80 users each, achieving 99.8% uptime SLA</li>
         </ul>
       </div>
 
@@ -409,7 +475,7 @@ footer strong{color:#fff}
         <ul class="exp-bullets">
           <li>Resolved 50+ tickets/week with average SLA resolution under 4 hours for 200+ user organization</li>
           <li>Configured Active Directory, DHCP, DNS, LDAP, ADFS — 99.8% uptime across all directory services</li>
-          <li>Led AD migration from Server 2008 → 2016 for 200+ accounts with zero data loss</li>
+          <li>Led AD migration from Server 2008 → 2016 for 200+ accounts and 15+ organizational units with zero data loss</li>
           <li>Managed DAS/NAS/SAN storage supporting 10+ TB; zero unplanned downtime over 18 months</li>
           <li>Reduced storage consumption ~20% via DFS, deduplication, and quota management</li>
         </ul>
@@ -419,138 +485,142 @@ footer strong{color:#fff}
   </div>
 </section>
 
-<div class="divider"></div>
-
 <!-- SKILLS -->
-<section id="skills" class="alt-bg">
+<section id="skills">
   <div class="container">
-    <div class="sec-label">Tech Stack</div>
-    <h2 class="sec-title">Core <span>Competencies</span></h2>
+    <div class="sec-label">tech_stack</div>
+    <h2 class="sec-title">core_<span>competencies</span></h2>
     <div class="skills-grid">
       <div class="skill-card fade-up">
+        <div class="skill-icon">🤝</div>
+        <div class="skill-title">forward_deployed</div>
+        <div class="stags"><span class="stag">client-onboarding</span><span class="stag">solution-impl</span><span class="stag">tech-delivery</span><span class="stag">prod-support</span><span class="stag">stakeholder-mgmt</span></div>
+      </div>
+      <div class="skill-card fade-up">
         <div class="skill-icon">☁️</div>
-        <div class="skill-title">Cloud Platforms</div>
-        <div class="stags"><span class="stag">AWS</span><span class="stag">Azure</span><span class="stag">GCP</span></div>
+        <div class="skill-title">cloud_platforms</div>
+        <div class="stags"><span class="stag">aws</span><span class="stag">azure</span><span class="stag">gcp</span><span class="stag">cloud-migration</span></div>
       </div>
       <div class="skill-card fade-up">
         <div class="skill-icon">🔄</div>
-        <div class="skill-title">CI/CD Pipelines</div>
-        <div class="stags"><span class="stag">Jenkins</span><span class="stag">GitHub Actions</span><span class="stag">GitLab CI</span><span class="stag">Azure DevOps</span><span class="stag">AWS CodePipeline</span><span class="stag">ArgoCD</span><span class="stag">GitOps</span></div>
+        <div class="skill-title">ci_cd_pipelines</div>
+        <div class="stags"><span class="stag">jenkins</span><span class="stag">github-actions</span><span class="stag">gitlab-ci</span><span class="stag">azure-devops</span><span class="stag">codecommit</span><span class="stag">harness</span><span class="stag">argocd</span><span class="stag">gitops</span></div>
       </div>
       <div class="skill-card fade-up">
         <div class="skill-icon">🐳</div>
-        <div class="skill-title">Containers &amp; Orchestration</div>
-        <div class="stags"><span class="stag">Docker</span><span class="stag">Kubernetes</span><span class="stag">EKS</span><span class="stag">AKS</span><span class="stag">GKE</span><span class="stag">Helm</span><span class="stag">KEDA</span><span class="stag">HPA</span><span class="stag">VPA</span></div>
+        <div class="skill-title">containers_orchestration</div>
+        <div class="stags"><span class="stag">docker</span><span class="stag">kubernetes</span><span class="stag">eks</span><span class="stag">aks</span><span class="stag">gke</span><span class="stag">openshift</span><span class="stag">helm</span><span class="stag">karpenter</span><span class="stag">keda</span><span class="stag">hpa</span><span class="stag">vpa</span></div>
       </div>
       <div class="skill-card fade-up">
         <div class="skill-icon">🏗️</div>
-        <div class="skill-title">IaC &amp; Automation</div>
-        <div class="stags"><span class="stag">Terraform</span><span class="stag">OpenTofu</span><span class="stag">CloudFormation</span><span class="stag">Ansible</span><span class="stag">Bash</span><span class="stag">Python</span><span class="stag">HCL</span></div>
+        <div class="skill-title">iac_automation</div>
+        <div class="stags"><span class="stag">terraform</span><span class="stag">opentofu</span><span class="stag">cloudformation</span><span class="stag">ansible</span><span class="stag">hcl</span></div>
       </div>
       <div class="skill-card fade-up">
         <div class="skill-icon">🔐</div>
-        <div class="skill-title">DevSecOps</div>
-        <div class="stags"><span class="stag">Trivy</span><span class="stag">SonarQube</span><span class="stag">SAST</span><span class="stag">DAST</span><span class="stag">OWASP</span><span class="stag">AWS WAF</span><span class="stag">GuardDuty</span><span class="stag">KMS</span><span class="stag">Secrets Manager</span><span class="stag">RBAC</span></div>
+        <div class="skill-title">devsecops</div>
+        <div class="stags"><span class="stag">trivy</span><span class="stag">sonarqube</span><span class="stag">sast</span><span class="stag">dast</span><span class="stag">owasp</span><span class="stag">waf</span><span class="stag">guardduty</span><span class="stag">kms</span><span class="stag">secrets-mgr</span><span class="stag">rbac</span><span class="stag">pci-dss</span><span class="stag">soc2</span></div>
       </div>
       <div class="skill-card fade-up">
         <div class="skill-icon">📊</div>
-        <div class="skill-title">Observability</div>
-        <div class="stags"><span class="stag">Prometheus</span><span class="stag">Grafana</span><span class="stag">Datadog</span><span class="stag">EFK Stack</span><span class="stag">CloudWatch</span><span class="stag">CloudTrail</span><span class="stag">Azure Monitor</span></div>
+        <div class="skill-title">sre_observability</div>
+        <div class="stags"><span class="stag">prometheus</span><span class="stag">grafana</span><span class="stag">datadog</span><span class="stag">efk</span><span class="stag">splunk</span><span class="stag">cloudwatch</span><span class="stag">cloudtrail</span><span class="stag">azure-monitor</span></div>
       </div>
       <div class="skill-card fade-up">
         <div class="skill-icon">🤖</div>
-        <div class="skill-title">AIDevOps / LLMOps</div>
-        <div class="stags"><span class="stag">K8sGPT</span><span class="stag">Claude MCP Server</span><span class="stag">LLM Automation</span><span class="stag">GenAI Pipelines</span><span class="stag">RAG Pipelines</span><span class="stag">LLMOps</span></div>
+        <div class="skill-title">aidevops_llmops</div>
+        <div class="stags"><span class="stag">k8sgpt</span><span class="stag">claude-mcp</span><span class="stag">llm-automation</span><span class="stag">genai-pipelines</span><span class="stag">rag</span><span class="stag">ai-agents</span><span class="stag">mlops</span></div>
       </div>
       <div class="skill-card fade-up">
         <div class="skill-icon">💻</div>
-        <div class="skill-title">Scripting &amp; Languages</div>
-        <div class="stags"><span class="stag">Python</span><span class="stag">Bash/Shell</span><span class="stag">YAML</span><span class="stag">HCL</span><span class="stag">JSON</span><span class="stag">Git</span><span class="stag">Gitflow</span></div>
+        <div class="skill-title">scripting_languages</div>
+        <div class="stags"><span class="stag">python</span><span class="stag">bash</span><span class="stag">powershell</span><span class="stag">groovy</span><span class="stag">typescript</span><span class="stag">yaml</span><span class="stag">json</span><span class="stag">git</span><span class="stag">gitflow</span></div>
       </div>
     </div>
 
     <div class="prof-grid">
-      <div style="font-size:0.95rem;font-weight:800;color:var(--text);grid-column:1/-1;margin-bottom:0.5rem">Proficiency Overview</div>
+      <div style="font-family:var(--mono);font-size:0.9rem;font-weight:700;color:var(--text);grid-column:1/-1;margin-bottom:0.5rem">proficiency_overview</div>
       <div>
-        <div class="sbar-wrap"><div class="sbar-top"><span class="sbar-name">AWS</span><span class="sbar-level">Expert · 95%</span></div><div class="sbar"><div class="sbar-fill" style="--w:95%"></div></div></div>
-        <div class="sbar-wrap"><div class="sbar-top"><span class="sbar-name">Kubernetes / EKS</span><span class="sbar-level">Expert · 92%</span></div><div class="sbar"><div class="sbar-fill" style="--w:92%"></div></div></div>
-        <div class="sbar-wrap"><div class="sbar-top"><span class="sbar-name">Terraform / IaC</span><span class="sbar-level">Expert · 93%</span></div><div class="sbar"><div class="sbar-fill" style="--w:93%"></div></div></div>
-        <div class="sbar-wrap"><div class="sbar-top"><span class="sbar-name">CI/CD Pipelines</span><span class="sbar-level">Expert · 90%</span></div><div class="sbar"><div class="sbar-fill" style="--w:90%"></div></div></div>
+        <div class="sbar-wrap"><div class="sbar-top"><span class="sbar-name">AWS</span><span class="sbar-level">expert · 95%</span></div><div class="sbar"><div class="sbar-fill" style="--w:95%"></div></div></div>
+        <div class="sbar-wrap"><div class="sbar-top"><span class="sbar-name">Kubernetes / EKS</span><span class="sbar-level">expert · 92%</span></div><div class="sbar"><div class="sbar-fill" style="--w:92%"></div></div></div>
+        <div class="sbar-wrap"><div class="sbar-top"><span class="sbar-name">Terraform / IaC</span><span class="sbar-level">expert · 93%</span></div><div class="sbar"><div class="sbar-fill" style="--w:93%"></div></div></div>
+        <div class="sbar-wrap"><div class="sbar-top"><span class="sbar-name">CI/CD Pipelines</span><span class="sbar-level">expert · 90%</span></div><div class="sbar"><div class="sbar-fill" style="--w:90%"></div></div></div>
       </div>
       <div>
-        <div class="sbar-wrap"><div class="sbar-top"><span class="sbar-name">Azure</span><span class="sbar-level">Advanced · 82%</span></div><div class="sbar"><div class="sbar-fill" style="--w:82%"></div></div></div>
-        <div class="sbar-wrap"><div class="sbar-top"><span class="sbar-name">GCP</span><span class="sbar-level">Advanced · 78%</span></div><div class="sbar"><div class="sbar-fill" style="--w:78%"></div></div></div>
-        <div class="sbar-wrap"><div class="sbar-top"><span class="sbar-name">DevSecOps</span><span class="sbar-level">Advanced · 85%</span></div><div class="sbar"><div class="sbar-fill" style="--w:85%"></div></div></div>
-        <div class="sbar-wrap"><div class="sbar-top"><span class="sbar-name">AIDevOps / LLMOps</span><span class="sbar-level">Advancing · 72%</span></div><div class="sbar"><div class="sbar-fill" style="--w:72%"></div></div></div>
+        <div class="sbar-wrap"><div class="sbar-top"><span class="sbar-name">Azure</span><span class="sbar-level">advanced · 82%</span></div><div class="sbar"><div class="sbar-fill" style="--w:82%"></div></div></div>
+        <div class="sbar-wrap"><div class="sbar-top"><span class="sbar-name">GCP</span><span class="sbar-level">advanced · 78%</span></div><div class="sbar"><div class="sbar-fill" style="--w:78%"></div></div></div>
+        <div class="sbar-wrap"><div class="sbar-top"><span class="sbar-name">DevSecOps</span><span class="sbar-level">advanced · 85%</span></div><div class="sbar"><div class="sbar-fill" style="--w:85%"></div></div></div>
+        <div class="sbar-wrap"><div class="sbar-top"><span class="sbar-name">AIDevOps / LLMOps</span><span class="sbar-level">advancing · 72%</span></div><div class="sbar"><div class="sbar-fill" style="--w:72%"></div></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<div class="divider"></div>
-
 <!-- AIDEVOPS -->
-<section id="aidevops">
+<section id="aidevops" class="alt-bg">
   <div class="container">
-    <div class="sec-label">Frontier Work</div>
-    <h2 class="sec-title">AIDevOps &amp; <span>LLMOps</span></h2>
-    <p style="color:var(--text2);max-width:600px;margin-bottom:2.5rem;font-size:0.92rem;line-height:1.65">Pioneering the integration of AI and large language models into the DevOps lifecycle — reducing toil, accelerating diagnostics, and enabling intelligent automation across the platform stack.</p>
+    <div class="sec-label">frontier_work</div>
+    <h2 class="sec-title">ai_devops_&amp;_<span>llmops</span></h2>
+    <p style="color:var(--text2);max-width:600px;margin-bottom:2.25rem;font-size:0.9rem;line-height:1.65">Pioneering the integration of AI and large language models into the DevOps lifecycle — reducing toil, accelerating diagnostics, and enabling intelligent automation across the platform stack.</p>
     <div class="ai-grid">
       <div class="ai-card fade-up">
-        <div class="ai-top"><div class="ai-icon-wrap">🧠</div><div class="ai-title">K8sGPT + Amazon EKS</div></div>
+        <div class="ai-top"><div class="ai-icon-wrap">🧠</div><div class="ai-title">k8sgpt + eks</div></div>
         <p class="ai-desc">AI-powered Kubernetes diagnostics delivering intelligent issue detection, automated root-cause analysis, and faster remediation cycles on production EKS clusters.</p>
       </div>
       <div class="ai-card fade-up">
-        <div class="ai-top"><div class="ai-icon-wrap">⚡</div><div class="ai-title">Claude MCP Server</div></div>
-        <p class="ai-desc">LLM-driven operational workflows via Claude MCP Server — enhancing developer productivity and reducing manual toil across the entire DevOps lifecycle.</p>
+        <div class="ai-top"><div class="ai-icon-wrap">⚡</div><div class="ai-title">claude_mcp_server</div></div>
+        <p class="ai-desc">AI-driven operational workflows via Claude MCP Server — enhancing developer productivity and reducing manual toil across the entire DevOps lifecycle.</p>
       </div>
       <div class="ai-card fade-up">
-        <div class="ai-top"><div class="ai-icon-wrap">🚀</div><div class="ai-title">Zero-Hosting Deployments</div></div>
+        <div class="ai-top"><div class="ai-icon-wrap">🚀</div><div class="ai-title">zero_hosting_deploys</div></div>
         <p class="ai-desc">GitHub Pages for documentation, demos, and developer portfolios — eliminating infrastructure overhead entirely while maintaining full developer experience.</p>
       </div>
       <div class="ai-card fade-up">
-        <div class="ai-top"><div class="ai-icon-wrap">🔁</div><div class="ai-title">GenAI Pipeline Automation</div></div>
+        <div class="ai-top"><div class="ai-icon-wrap">🔁</div><div class="ai-title">genai_pipeline_automation</div></div>
         <p class="ai-desc">AI-assisted workflows embedding intelligence into CI/CD pipelines, monitoring systems, and incident response stages for faster, smarter delivery cycles.</p>
       </div>
     </div>
   </div>
 </section>
 
-<div class="divider"></div>
-
 <!-- PROJECTS -->
-<section id="projects" class="alt-bg">
+<section id="projects">
   <div class="container">
-    <div class="sec-label">Key Projects</div>
-    <h2 class="sec-title">Flagship <span>Deployments</span></h2>
+    <div class="sec-label">selected_projects</div>
+    <h2 class="sec-title">flagship_<span>deployments</span></h2>
     <div class="proj-grid">
-      <div class="proj-card fade-up"><div class="proj-icon-wrap">☸️</div><div class="proj-title">Production-Grade EKS/AKS/GKE Cluster Deployment</div><div class="proj-desc">Multi-cloud Kubernetes on AWS, Azure &amp; GCP using Terraform with HA, auto-scaling, and secure networking across all three providers.</div><div class="ptags"><span class="ptag">EKS</span><span class="ptag">AKS</span><span class="ptag">GKE</span><span class="ptag">Terraform</span><span class="ptag">Multi-Cloud</span></div></div>
-      <div class="proj-card fade-up"><div class="proj-icon-wrap">🗄️</div><div class="proj-title">Automated DB Migration to Amazon RDS</div><div class="proj-desc">Migrated EC2-hosted MySQL to Amazon RDS using AWS DMS with minimal downtime, high availability setup, and full data integrity validation.</div><div class="ptags"><span class="ptag">AWS DMS</span><span class="ptag">RDS</span><span class="ptag">MySQL</span><span class="ptag">HA</span></div></div>
-      <div class="proj-card fade-up"><div class="proj-icon-wrap">🐍</div><div class="proj-title">Scalable Python App on AWS EC2</div><div class="proj-desc">Cloud deployment of a full-stack Python application on AWS EC2 with comprehensive disaster recovery strategy and auto-scaling.</div><div class="ptags"><span class="ptag">Python</span><span class="ptag">EC2</span><span class="ptag">AWS</span><span class="ptag">DR</span></div></div>
-      <div class="proj-card fade-up"><div class="proj-icon-wrap">☕</div><div class="proj-title">Java Spring Boot on Azure — HA &amp; DR</div><div class="proj-desc">Cloud-native deployment of a full-stack Java Spring Boot app on Azure with high availability, disaster recovery, and enterprise security.</div><div class="ptags"><span class="ptag">Java</span><span class="ptag">Spring Boot</span><span class="ptag">Azure</span><span class="ptag">AKS</span></div></div>
-      <div class="proj-card fade-up"><div class="proj-icon-wrap">🟢</div><div class="proj-title">Full-Stack Node.js on GCP</div><div class="proj-desc">Cloud-native GCP deployment of a full-stack Node.js application with complete HA, scalability, networking, and security layers.</div><div class="ptags"><span class="ptag">Node.js</span><span class="ptag">GCP</span><span class="ptag">GKE</span><span class="ptag">Cloud Armor</span></div></div>
-      <div class="proj-card fade-up"><div class="proj-icon-wrap">⚡</div><div class="proj-title">Serverless Full-Stack on AWS</div><div class="proj-desc">Fully executed serverless deployment using Lambda, API Gateway, and DynamoDB — zero server management, infinite scale.</div><div class="ptags"><span class="ptag">Lambda</span><span class="ptag">API Gateway</span><span class="ptag">DynamoDB</span><span class="ptag">Serverless</span></div></div>
-      <div class="proj-card fade-up"><div class="proj-icon-wrap">🔄</div><div class="proj-title">Multi-Cloud IaC Automation</div><div class="proj-desc">End-to-end Terraform automation for AWS, Azure, and GCP with complete networking, security, and deployment layers in a unified codebase.</div><div class="ptags"><span class="ptag">Terraform</span><span class="ptag">AWS</span><span class="ptag">Azure</span><span class="ptag">GCP</span></div></div>
-      <div class="proj-card fade-up"><div class="proj-icon-wrap">🔀</div><div class="proj-title">GitOps Microservices Platform</div><div class="proj-desc">Full-stack Python, Java &amp; Node.js microservices on AWS using CI/CD, GitOps, Helm, and centralized monitoring with Prometheus, Grafana &amp; EFK Stack.</div><div class="ptags"><span class="ptag">GitOps</span><span class="ptag">Helm</span><span class="ptag">EFK</span><span class="ptag">Prometheus</span></div></div>
-      <div class="proj-card fade-up"><div class="proj-icon-wrap">🏗️</div><div class="proj-title">Multi-Tier Node.js on 20+ AWS Services</div><div class="proj-desc">Production-grade multi-tier Node.js deployment leveraging 20+ AWS services covering HA, scalability, networking, security, and monitoring.</div><div class="ptags"><span class="ptag">AWS</span><span class="ptag">Node.js</span><span class="ptag">20+ Services</span><span class="ptag">HA</span></div></div>
+      <div class="proj-card fade-up"><div class="proj-icon-wrap">☸️</div><div class="proj-title">Production-Grade EKS/AKS/GKE Cluster Deployment</div><div class="proj-desc">Multi-cloud Kubernetes on AWS, Azure &amp; GCP using Terraform with HA, auto-scaling, and secure networking across all three providers.</div><div class="ptags"><span class="ptag">eks</span><span class="ptag">aks</span><span class="ptag">gke</span><span class="ptag">terraform</span></div></div>
+      <div class="proj-card fade-up"><div class="proj-icon-wrap">🗄️</div><div class="proj-title">Automated DB Migration to Amazon RDS</div><div class="proj-desc">Migrated EC2-hosted MySQL to Amazon RDS using AWS DMS with minimal downtime, high availability setup, and full data integrity validation.</div><div class="ptags"><span class="ptag">aws-dms</span><span class="ptag">rds</span><span class="ptag">mysql</span></div></div>
+      <div class="proj-card fade-up"><div class="proj-icon-wrap">🐍</div><div class="proj-title">Scalable Python App on AWS EC2</div><div class="proj-desc">Cloud deployment of a full-stack Python application on AWS EC2 with comprehensive disaster recovery strategy and auto-scaling.</div><div class="ptags"><span class="ptag">python</span><span class="ptag">ec2</span><span class="ptag">dr</span></div></div>
+      <div class="proj-card fade-up"><div class="proj-icon-wrap">☕</div><div class="proj-title">Java Spring Boot on Azure — HA &amp; DR</div><div class="proj-desc">Cloud-native deployment of a full-stack Java Spring Boot app on Azure with high availability, disaster recovery, and enterprise security.</div><div class="ptags"><span class="ptag">java</span><span class="ptag">spring-boot</span><span class="ptag">aks</span></div></div>
+      <div class="proj-card fade-up"><div class="proj-icon-wrap">🟢</div><div class="proj-title">Full-Stack Node.js on GCP</div><div class="proj-desc">Cloud-native GCP deployment of a full-stack Node.js application with complete HA, scalability, networking, and security layers.</div><div class="ptags"><span class="ptag">node.js</span><span class="ptag">gke</span><span class="ptag">cloud-armor</span></div></div>
+      <div class="proj-card fade-up"><div class="proj-icon-wrap">⚡</div><div class="proj-title">Serverless Full-Stack on AWS</div><div class="proj-desc">Fully executed serverless deployment using Lambda, API Gateway, and DynamoDB — zero server management, infinite scale.</div><div class="ptags"><span class="ptag">lambda</span><span class="ptag">api-gateway</span><span class="ptag">dynamodb</span></div></div>
+      <div class="proj-card fade-up"><div class="proj-icon-wrap">🔄</div><div class="proj-title">Multi-Cloud IaC Automation</div><div class="proj-desc">End-to-end Terraform automation for AWS, Azure, and GCP with complete networking, security, and deployment layers in a unified codebase.</div><div class="ptags"><span class="ptag">terraform</span><span class="ptag">aws</span><span class="ptag">azure</span><span class="ptag">gcp</span></div></div>
+      <div class="proj-card fade-up"><div class="proj-icon-wrap">🔀</div><div class="proj-title">GitOps Microservices Platform</div><div class="proj-desc">Full-stack Python, Java &amp; Node.js microservices on AWS using CI/CD, GitOps, Helm, and centralized monitoring with Prometheus, Grafana &amp; EFK Stack.</div><div class="ptags"><span class="ptag">gitops</span><span class="ptag">helm</span><span class="ptag">efk</span></div></div>
+      <div class="proj-card fade-up"><div class="proj-icon-wrap">🏗️</div><div class="proj-title">Multi-Tier Node.js on 20+ AWS Services</div><div class="proj-desc">Production-grade multi-tier Node.js deployment leveraging 20+ AWS services covering HA, scalability, networking, security, and monitoring.</div><div class="ptags"><span class="ptag">aws</span><span class="ptag">node.js</span><span class="ptag">ha</span></div></div>
+      <div class="proj-card fade-up"><div class="proj-icon-wrap">☕</div><div class="proj-title">Java Maven App on Apache Tomcat</div><div class="proj-desc">End-to-end automation of a Java Maven application deployment on Apache Tomcat using CI/CD practices.</div><div class="ptags"><span class="ptag">java</span><span class="ptag">maven</span><span class="ptag">tomcat</span></div></div>
+      <div class="proj-card fade-up"><div class="proj-icon-wrap">🧩</div><div class="proj-title">Multi-Tier Multi-Cloud Infrastructure Automation</div><div class="proj-desc">End-to-end automation of multi-tier AWS, Azure, and GCP cloud infrastructure using Terraform with complete networking, security, and deployment layers.</div><div class="ptags"><span class="ptag">terraform</span><span class="ptag">multi-cloud</span></div></div>
+      <div class="proj-card fade-up"><div class="proj-icon-wrap">🦊</div><div class="proj-title">GitLab CI/CD Pipeline for Java on GKE</div><div class="proj-desc">End-to-end CI/CD pipeline for Java applications using Azure DevOps, Docker, and Kubernetes on GKE.</div><div class="ptags"><span class="ptag">gitlab-ci</span><span class="ptag">java</span><span class="ptag">gke</span></div></div>
+      <div class="proj-card fade-up"><div class="proj-icon-wrap">🔷</div><div class="proj-title">Azure DevOps CI/CD Pipeline for Java on AKS</div><div class="proj-desc">End-to-end CI/CD pipeline for Java applications using Azure DevOps, Docker, and Kubernetes on AKS.</div><div class="ptags"><span class="ptag">azure-devops</span><span class="ptag">java</span><span class="ptag">aks</span></div></div>
+      <div class="proj-card fade-up"><div class="proj-icon-wrap">🟩</div><div class="proj-title">Cloud-Native Jenkins Pipeline for Node.js</div><div class="proj-desc">End-to-end cloud-native CI/CD pipeline for Node.js microservices using Jenkins and Kubernetes.</div><div class="ptags"><span class="ptag">jenkins</span><span class="ptag">node.js</span><span class="ptag">k8s</span></div></div>
+      <div class="proj-card fade-up"><div class="proj-icon-wrap">🦊</div><div class="proj-title">GitLab CI/CD DevOps Automation for Node.js (EKS)</div><div class="proj-desc">End-to-end DevOps automation for Node.js microservices with GitLab CI/CD and Kubernetes on EKS.</div><div class="ptags"><span class="ptag">gitlab-ci</span><span class="ptag">node.js</span><span class="ptag">eks</span></div></div>
     </div>
   </div>
 </section>
 
-<div class="divider"></div>
-
 <!-- CERT + EDU -->
-<section>
+<section class="alt-bg">
   <div class="container">
-    <div class="sec-label">Credentials</div>
-    <h2 class="sec-title">Certification &amp; <span>Education</span></h2>
+    <div class="sec-label">credentials</div>
+    <h2 class="sec-title">certification_&amp;_<span>education</span></h2>
     <div class="cert-edu-grid">
       <div class="cert-card fade-up">
         <div class="cert-badge">☁️</div>
         <div>
           <div class="cert-title">AWS Certified Solutions Architect</div>
-          <div class="cert-sub">Associate — SAA-C03 &nbsp;|&nbsp; Valid until May 12, 2029</div>
-          <div class="cert-badge-tag">✓ Active &amp; Valid</div>
+          <div class="cert-sub">Associate — SAA-C03</div>
+          <div class="cert-id">issued: 2026-05-12 &nbsp;|&nbsp; valid_until: 2029-05-12</div>
+          <div class="cert-badge-tag">✓ active &amp; valid</div>
         </div>
       </div>
       <div class="edu-card fade-up">
@@ -563,52 +633,51 @@ footer strong{color:#fff}
   </div>
 </section>
 
-<div class="divider"></div>
-
 <!-- CONTACT -->
-<section id="contact" class="alt-bg">
+<section id="contact">
   <div class="container">
-    <div class="sec-label">Get In Touch</div>
-    <h2 class="sec-title">Contact <span>Ashish</span></h2>
+    <div class="sec-label">get_in_touch</div>
+    <h2 class="sec-title">contact_<span>ashish</span></h2>
     <div class="contact-grid">
       <div class="contact-card fade-up">
         <div class="contact-icon">📧</div>
-        <div><div class="contact-lbl">Email</div><div class="contact-val">ashish.mnnit777@gmail.com</div></div>
+        <div><div class="contact-lbl">email</div><div class="contact-val">ashish.mnnit777@gmail.com</div></div>
       </div>
       <div class="contact-card fade-up">
         <div class="contact-icon">📱</div>
-        <div><div class="contact-lbl">Phone</div><div class="contact-val">+91-9450321712</div></div>
+        <div><div class="contact-lbl">phone</div><div class="contact-val">+91-9450321712</div></div>
       </div>
       <div class="contact-card fade-up">
         <div class="contact-icon">📍</div>
-        <div><div class="contact-lbl">Location</div><div class="contact-val">Gurugram, Haryana, India</div></div>
+        <div><div class="contact-lbl">location</div><div class="contact-val">Gurugram, Haryana, India</div></div>
       </div>
       <div class="contact-card fade-up">
         <div class="contact-icon">💼</div>
-        <div><div class="contact-lbl">LinkedIn</div><div class="contact-val">linkedin.com/in/ashish12041993</div></div>
+        <div><div class="contact-lbl">linkedin</div><div class="contact-val">linkedin.com/in/ashish12041993</div></div>
       </div>
     </div>
     <div class="open-to fade-up">
-      <span class="ot-lbl">Open to:</span>
-      <span class="ot-tag">DevOps</span>
-      <span class="ot-tag">DevSecOps</span>
-      <span class="ot-tag">AIDevOps</span>
-      <span class="ot-tag">LLMOps</span>
-      <span class="ot-tag">Cloud Engineering</span>
-      <span class="ot-tag">Platform Engineering</span><span class="ot-tag">Platform Security Lead Engineer</span><span class="ot-tag">DevOps Lead</span>
+      <span class="ot-lbl">open_to:</span>
+      <span class="ot-tag">Forward Deployed Engineer (FDE)</span>
+      <span class="ot-tag">Cloud Ops Tech Lead</span>
+      <span class="ot-tag">Lead DevOps Engineer</span>
+      <span class="ot-tag">Senior DevSecOps Engineer</span>
+      <span class="ot-tag">AI DevOps Engineer</span>
+      <span class="ot-tag">LLMOps Engineer</span>
+      <span class="ot-tag">Cloud Engineering Lead</span>
+      <span class="ot-tag">Platform Engineering Lead</span>
+      <span class="ot-tag">Platform Security Lead Engineer</span>
     </div>
   </div>
 </section>
 
 <footer>
-  <strong>Ashish Vishwakarma</strong> &nbsp;·&nbsp; Gen AI DevOps Engineer &nbsp;·&nbsp; AWS SAA-C03 Certified &nbsp;·&nbsp; Gurugram, India
+  <span class="fp">$</span> <strong>Ashish Vishwakarma</strong> &nbsp;·&nbsp; Lead Infrastructure &amp; Forward Deployed Engineer &nbsp;·&nbsp; AWS SAA-C03 Certified &nbsp;·&nbsp; Gurugram, India
 </footer>
 
 <script>
-// Nav scroll effect
 window.addEventListener('scroll',()=>{
   document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>20);
-  // Active nav link
   const secs=['about','experience','skills','aidevops','projects','contact'];
   let cur='about';
   secs.forEach(id=>{
@@ -620,23 +689,14 @@ window.addEventListener('scroll',()=>{
   });
 });
 
-// Mobile menu
-function toggleMenu(){
-  document.getElementById('mobileMenu').classList.toggle('open');
-}
-function closeMenu(){
-  document.getElementById('mobileMenu').classList.remove('open');
-}
+function toggleMenu(){ document.getElementById('mobileMenu').classList.toggle('open'); }
+function closeMenu(){ document.getElementById('mobileMenu').classList.remove('open'); }
 
-// Scroll animations
 const observer=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting)e.target.classList.add('visible');
-  });
+  entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('visible'); });
 },{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
 
-// Animate skill bars when visible
 const barObserver=new IntersectionObserver(entries=>{
   entries.forEach(e=>{
     if(e.isIntersecting){
